@@ -1,0 +1,64 @@
+import boto3
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech UI</title>
+</head>
+<body>
+
+<h1>Text to Speech Converter</h1>
+
+<label for="text">Enter Text:</label>
+<textarea id="text" rows="4" cols="50"></textarea>
+
+<br>
+
+<label for="voice">Select Voice:</label>
+<select id="voice">
+    <option value="Joanna">Joanna</option>
+    <option value="Matthew">Matthew</option>
+    <!-- Add more options for other Polly voices as needed -->
+</select>
+
+<br>
+
+<button onclick="convertToAudio()">Convert to Audio</button>
+
+<script>
+function convertToAudio() {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech UI</title>
+</head>
+<body>
+
+<h1>Text to Speech Converter</h1>
+
+<label for="text">Enter Text:</label>
+<textarea id="text" rows="4" cols="50"></textarea>
+
+<br>
+
+<label for="voice">Select Voice:</label>
+<select id="voice">
+    <option value="Joanna">Joanna</option>
+    <option value="Matthew">Matthew</option>
+    <!-- Add more options for other Polly voices as needed -->
+</select>
+
+<br>
+
+<button onclick="convertToAudio()">Convert to Audio</button>
+
+<script>
+function convertToAudio() {
+    // Get values from the UI
+    var text = document.getElementById('text').value;
+    var voice = document.getElementById('voice').value;
+
+    // Prepare the payload for Lambda function
